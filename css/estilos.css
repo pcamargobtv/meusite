@@ -8,7 +8,7 @@
 body {
     background-image: url('../img/fundo.jpg');
     background-size: auto 100vh;        
-    font-family: Arial;
+    font-family: 'Source Code Pro', monospace;
     height: 100vh;
     font-size: 12px;    
   }
@@ -70,20 +70,66 @@ header {
   }
   
   .site-subtitle,
-  .site-title {
-    color: whitesmoke;
+  .site-title {    
     text-align: center;      
   }
 
   .site-title{
+    color: goldenrod;
+    font-family: 'Alfa Slab One', cursive;
     font-size: 4em;
   } 
   
   .site-subtitle {
-    font-style: italic;    
+    color: lightgray;
+    font-family: 'Press Start 2P', cursive;
+    font-style: italic; 
+    line-height: 1.8em;       
   }
   
-  .img-portfolio {
-    width: 180px;
-    height: 180px;
+  .portfolio {    
+    padding: 2em;
   }
+
+  .portfolio h2 {        
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;       
+    margin-bottom: 1.5em;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+    height: 100vh;;
+  }
+  
+
+  @media (min-width: 590px){
+    .portfolio .grid {
+      grid-template-columns: 300px 300px;    
+      justify-content: center; 
+    }
+  }
+
+  @media (min-width: 880px){
+    .portfolio .grid {
+      grid-template-columns: repeat(3,300px);   
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh- 8em - 32px  );
+
+    }
+  }
+
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .img-portfolio {    
+    height: 260px;
+    width: 280px;
+    object-fit: cover;
+    object-position: center bottom;    
+  }
+
