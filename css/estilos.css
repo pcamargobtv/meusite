@@ -139,7 +139,8 @@ header {
   }
 
 
-  .sobre img{  
+  .sobre img{
+    background-image: url('../img/PauloCamargo.jpg');
     height: 260px;
     width: 280px;
     object-fit: cover;    
